@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Największa liczba z osobnych inputów</title>
+</head>
+<body>
+  <h1>Znajdź największą liczbę</h1>
+  <form>
+    <label for="liczba1">Liczba 1:</label>
+    <input type="number" id="liczba1"><br>
+    <label for="liczba2">Liczba 2:</label>
+    <input type="number" id="liczba2"><br>
+    <label for="liczba3">Liczba 3:</label>
+    <input type="number" id="liczba3"><br>
+    <label for="liczba4">Liczba 4:</label>
+    <input type="number" id="liczba4"><br>
+    <label for="liczba5">Liczba 5:</label>
+    <input type="number" id="liczba5"><br>
+    <button type="button" onclick="znajdzNajwieksza()">Znajdź</button>
+  </form>
+  <p id="wynikNajwieksza"></p>
+
+  <script>
+    function znajdzNajwieksza() {
+      // Pobranie wartości z inputów
+      const liczby = [
+        document.getElementById('liczba1').value,
+        document.getElementById('liczba2').value,
+        document.getElementById('liczba3').value,
+        document.getElementById('liczba4').value,
+        document.getElementById('liczba5').value
+      ];
+
+      // Przekształcenie na liczby i filtrowanie pustych pól
+      const liczbyFiltrowane = liczby
+        .map(Number) // Konwersja na liczby
+        .filter(val => !isNaN(val)); // Ignorowanie pustych inputów lub tekstów
+
+      if (liczbyFiltrowane.length === 0) {
+        // Jeśli żadna liczba nie została podana
+        document.getElementById('wynikNajwieksza').textContent = 
+          'Nie podano żadnych liczb.';
+      } else {
+        // Znajdź największą liczbę
+        const najwiekszaLiczba = Math.max(...liczbyFiltrowane);
+        document.getElementById('wynikNajwieksza').textContent = 
+          `Największa liczba to: ${najwiekszaLiczba}`;
+      }
+    }
+  </script>
+</body>
+</html>
+
