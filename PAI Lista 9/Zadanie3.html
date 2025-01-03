@@ -7,27 +7,29 @@
     <link rel="stylesheet" href="Zadanie3.css">
 </head>
 <body>
-    <div class="main">
-        <div class="naglowek">Formularz rejstracyjny</div>
-        <form>
-            <label>
-                <input type="text" placeholder="Imię" required>
-                <input type="text" placeholder="Nazwisko" required>
-                <input type="text" placeholder="E-mail" required>
-                <input type="text" placeholder="Nazwisko" required>
-                <input type="text" placeholder="Hasło" required>
-                <input type="text" placeholder="Powtórz hasło">
-                <input type="text" placeholder="Adres (opcjonalnie)">
-                <input type="file" placeholder="Zdjęcie profilowe (opcjonalnie)">
-                <input type="radio">1 stopnień
-                <input type="radio">2 stopnień
-                <input type="radio">3 stopnień
-                <input type="radio">Chcę otrzymywać newsletter
-                <input type="text" value="Uwagi">
-                <input type="button" value="Wyślij">
-                <input type="button" value="Reset">
-            </label>
-        </form>
+    <div class="box">
+        <header>
+            <h1>Formularz rejestracyjny</h1>
+        </header>
+        <main>
+            <form>
+                <input type="text" placeholder="Imię" required><br>
+                <input type="text" placeholder="Nazwisko" required><br>
+                <input type="text" placeholder="E-mail" required><br>
+                <input type="text" placeholder="Hasło" required><br>
+                <input type="text" placeholder="Powtórz hasło"><br>
+                <input type="text" placeholder="Adres (opcjonalnie)"><br>
+                <input type="file" placeholder="Zdjęcie profilowe (opcjonalnie)" class="file"><br>
+                <select>
+                    <option value="stopień 1">stopień 1</option>
+                    <option value="stopień 1">stopień 2</option>
+                    <option value="stopień 1">stopień 3</option>
+                </select><br>
+                <textarea placeholder="Uwagi"></textarea>
+                <input type="submit" value="Wyślij" class="button">
+                <input type="reset" value="Reset" class="button">
+            </form>
+        </main>
     </div>
 </body>
 </html>
