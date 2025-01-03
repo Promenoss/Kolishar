@@ -66,4 +66,17 @@ select, .button, textarea
 .file
 {
     color: white;
+    padding-bottom: 10px;
+}
+
+input:focus, textarea:focus
+{
+    background-color: rgb(216, 216, 216);
+    color: black;
+    transition: .3s;
+}
+
+.disabled:hover
+{
+    cursor: alias;
 }
