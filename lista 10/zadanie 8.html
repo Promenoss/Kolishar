@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sinus kąta</title>
+</head>
+<body>
+  <h1>Oblicz sinus kąta</h1>
+  <form>
+    <label for="katWejscie">Podaj kąt w stopniach:</label>
+    <input type="number" id="katWejscie">
+    <button type="button" onclick="obliczSinus()">Oblicz</button>
+  </form>
+  <p id="wynikSinus"></p>
+
+  <script>
+    function obliczSinus() {
+      const kat = document.getElementById('katWejscie').value;
+      const radiany = kat * (Math.PI / 180); // Konwersja stopni na radiany
+      const sinus = Math.sin(radiany);
+
+      if (isNaN(kat)) {
+        document.getElementById('wynikSinus').textContent = 
+          'Podano nieprawidłowy kąt. Wprowadź liczbę.';
+      } else {
+        document.getElementById('wynikSinus').textContent = 
+          `Sinus kąta ${kat}° wynosi: ${sinus.toFixed(4)}`;
+      }
+    }
+  </script>
+</body>
+</html>

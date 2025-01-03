@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trójkąt równoramienny</title>
+</head>
+<body>
+  <h1>Rysowanie trójkąta równoramiennego z gwiazdek</h1>
+  <form>
+    <label for="wysokoscTrojkata">Podaj wysokość trójkąta:</label>
+    <input type="number" id="wysokoscTrojkata">
+    <button type="button" onclick="rysujTrojkat()">Rysuj</button>
+  </form>
+  <pre id="wynikTrojkat"></pre>
+
+  <script>
+    function rysujTrojkat() {
+      const wysokosc = document.getElementById('wysokoscTrojkata').value;
+      const wynik = document.getElementById('wynikTrojkat');
+      let trojkat = '';
+
+      for (let i = 1; i <= wysokosc; i++) {
+        const spacje = ' '.repeat(wysokosc - i);
+        const gwiazdki = '* '.repeat(i).trim(); // Dodaj spacje między gwiazdkami
+        trojkat += spacje + gwiazdki + '\n';
+      }
+
+      wynik.textContent = trojkat;
+    }
+  </script>
+</body>
+</html>
