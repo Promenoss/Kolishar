@@ -1,0 +1,17 @@
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(grey, lightgrey) fixed;
+    margin-left: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+}
+.submit{
+    margin-top: 10px;
+    width: 5%;
+    padding: 3px;
+}
