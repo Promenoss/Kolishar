@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Gourmet Delight</title>
+</head>
+<style>
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+    }
+/* ------------------- HEADER ------------------- */
+    .header {
+        position: relative;
+        background-image: url(https://www.certifiedangusbeef.com/_next/image?url=https%3A%2F%2Fappetizing-cactus-7139e93734.media.strapiapp.com%2FSeared_Sirloin_Steak_with_Mushroom_Cream_Sauce_3136174082.jpeg&w=3840&q=75);
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        padding-top: 2vw;
+        padding-bottom: 0.5vw;
+        opacity: 0.8;
+        border-bottom: 5px solid rgb(168, 95, 0);
+    }
+    .header p {
+        text-shadow: 1vw 1vw 1vw #000000;
+        font-size: 10vw;
+        font-family: Brush Script MT, cursive;
+        user-select: none;
+    }
+/* ------------------- MENU ------------------- */
+.menu {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+        background-color: #222;
+        color: white;
+        text-align: center;
+        padding: 0.2vw;
+    }
+    .menu ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    .menu ul li {
+        display: inline;
+        margin: 0 2vw;
+        font-size: 2vw;
+        font-weight: bold;
+    }
+    .menu a:hover {
+        color: grey;
+        transition: 0.2s;
+    }
+    .menu ul li a {
+        color: white;
+        text-decoration: none;
+    }
+/* ------------------- ABOUT US ------------------- */
+    .about-us {
+        width: 60vw;
+        margin: auto;
+        background-color: black;
+        padding: 3vw;;
+        border-left: 5px solid rgb(168, 95, 0);
+        border-right: 5px solid rgb(168, 95, 0);
+    }
+    .about-us p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        font-size: 1.5vw;
+        line-height: 1.6;
+    }
+/* ------------------- CONTACT INFO ------------------- */
+    .contact-info {
+        width: 60vw;
+        margin: auto;
+        background-color: black;
+        padding: 3vw;
+        border-left: 5px solid rgb(168, 95, 0);
+        border-right: 5px solid rgb(168, 95, 0);
+        color: white;
+        text-align: center;
+    }
+    .contact-info h2 {
+        font-size: 4vw;
+        padding-bottom: 2vw;
+    }
+    .contact-info p {
+        font-size: 1.5vw;
+        line-height: 1.6;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+    }
+/* ------------------- FOOTER ------------------- */
+    .footer {
+        background-color: #222;
+        color: white;
+        text-align: center;
+        padding: 1vw;
+        border-top: 5px solid rgb(168, 95, 0);
+    }
+    .footer p {
+        margin: 0;
+        font-size: 1.2vw;
+    }
+/* ------------------- PHONE ------------------- */
+    @media (max-width: 768px) {
+        .header {
+            margin-top: 5vw;
+            padding-top: 5vw;
+        }
+        .header p {
+            font-size: 12vw;
+        }
+        .menu ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-left: 10vw;
+            padding-right: 10vw;
+        }
+        .menu ul li {
+            display: inline-block;
+            margin: 1vw 0;
+            font-size: 4vw;
+        }
+        .about-us, .contact-info {
+            width: 80vw;
+            padding: 5vw;
+            margin: auto;
+        }
+        .contact-info h2 {
+            font-size: 6vw;
+        }
+        .about-us p, .contact-info p {
+            font-family: cursive;
+            font-size: 3vw;
+            text-align: center;
+        }
+        .footer p {
+            font-family: cursive;
+            font-size: 3vw;
+            margin: 2vw;
+        }
+    }
+</style>
+<body>
+    <div class="header">
+        <p>About Us</p>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="Reservations.html">Reservations</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+        </ul>
+    </div>
+    <div class="about-us">
+        <p>Welcome to Steak'n'yum, where culinary excellence meets a warm, inviting atmosphere. Our restaurant is dedicated to providing an unforgettable dining experience, with a focus on high-quality ingredients, innovative dishes, and exceptional service.</p><br>
+        <p>Founded in 2023, Steak'n'yum has quickly become a favorite among food enthusiasts. Our team of talented chefs brings a wealth of experience and creativity to the kitchen, crafting dishes that are both visually stunning and deliciously satisfying.</p><br>
+        <p>At Steak'n'yum, we believe that dining is more than just a meal - it's an experience. From the moment you walk through our doors, you'll be greeted with a smile and treated like family. Our elegant yet comfortable dining room is the perfect setting for any occasion, whether it's a romantic dinner for two, a family celebration, or a business lunch.</p><br>
+        <p>We are committed to using only the freshest, highest-quality ingredients in our dishes. Our menu features a diverse selection of culinary delights, from classic favorites to innovative creations.</p><br>
+        <p>Thank you for choosing Steak'n'yum. We look forward to serving you and making your dining experience truly memorable.</p>
+    </div>
+    <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p>Address: ul. Przykładowa 1, 00-000 Katowice</p>
+        <p>Phone: +48 000 000 000</p>
+        <p>Email: contact@steaknyum.com</p>
+        <p>Opening Hours: Monday - Sunday: 11:00 AM - 10:00 PM</p>
+    </div>
+    <div class="footer">
+        <p>&copy; Steak'n'yum. All rights reserved.</p>
+    </div>
+</body>
+</html>
