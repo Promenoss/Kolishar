@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat Reservation</title>
+</head>
+<style>
+    * {
+        /* font-family: Arial, Helvetica, sans-serif; */
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+    }
+/* ------------------- MENU ------------------- */
+    .menu {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+        background-color: #222;
+        color: white;
+        text-align: center;
+        padding: 0.2vw;
+    }
+
+    .menu ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .menu ul li {
+        display: inline;
+        margin: 0 2vw;
+        font-size: 1.8vw;
+        
+    }
+    .menu a:hover {
+        color: rgb(113, 189, 125);
+        transition: 0.2s;
+        border-bottom: 1px solid gray;
+    }
+
+    .menu ul li a {
+        color: white;
+        text-decoration: none;
+        transition: .3s;
+        border-bottom: 1px solid transparent;
+        padding: 10px;
+        border-radius: 10px;
+    }
+/* ------------------- HEADER ------------------- */
+.header {
+        position: relative;
+        background-image: url(https://www.certifiedangusbeef.com/_next/image?url=https%3A%2F%2Fappetizing-cactus-7139e93734.media.strapiapp.com%2FSeared_Sirloin_Steak_with_Mushroom_Cream_Sauce_3136174082.jpeg&w=3840&q=75);
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        padding-top: 1.5vw;
+        padding-bottom: 0.5vw;
+        opacity: 0.8;
+    }
+    .header p {
+        text-shadow: 1vw 1vw 1vw #000000;
+        font-size: 10vw;
+        font-family: Brush Script MT, cursive;
+        user-select: none;
+    }
+/* ------------------- RESERVATION FORM ------------------- */
+    .reservation-form {
+        margin-top: 5vw;
+        text-align: center;
+        height: 100%;
+    }
+    .reservation-form h2 {
+        color: white;
+        font-size: 3vw;
+        color:rgb(113, 189, 125);
+    }
+    .reservation-form form {
+        display: inline-block;
+        background-color: #222;
+        padding: 2vw;
+        border-radius: 1vw;
+        border: 2px solid rgb(168, 95, 0);
+    }
+    .reservation-form label {
+        color: white;
+        font-size: 1.5vw;
+        width: 100%;
+    }
+    .reservation-form input {
+        font-size: 1.5vw;
+        width: 35%;
+        padding: 0.5vw;
+        margin: 0.5vw;
+    }
+    .reservationform .btn {
+        font-size: 1.5vw;
+        padding: 0.5vw 2vw;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 0.5vw;
+    }
+    .reservation-form .btn:hover {
+        background-color: #555;
+    }
+    #btn
+    {
+        font-size: 1.6vw;
+        font-weight: bold;
+        background-color: #222;
+        color: white;
+        border: 2px solid rgb(168, 95, 0);
+        border-radius: 10px;
+        padding: 0.5vw;
+        cursor: pointer;
+        transition: .3s;
+    }
+    #btn:hover
+    {
+        background-color: rgb(0, 0, 0);
+        color: rgb(168, 95, 0);
+        transition: 0.2s;
+        transform: scale(1.01);
+    }
+    .reservation-rules {
+        color: white;
+        font-size: 1vw;
+        margin-top: 5vw;
+        background-color: black;
+        padding: 1vw;
+        border-radius: 0.5vw;
+        display: inline-block;
+        text-align: left;
+    }
+/* ------------------- FOOTER ------------------- */
+    .footer {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #222;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 11.3vw;
+        border-top: 2px solid rgb(168, 95, 0);;
+    }
+    .footer p {
+        margin-left: 7vw;
+        margin-right: 7vw;
+        padding: 0.2vw;
+        font-size: 1.1vw;
+    }
+
+    @media (max-width: 768px) {
+        .menu ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-left: 10vw;
+            padding-right: 10vw;
+        }
+        .menu ul li {
+            display: inline-block;
+            margin: 1vw 0;
+            font-size: 4vw;
+        }
+        .header {
+            padding-top: 5vw;
+            padding-bottom: 0.1vw;
+        }
+        .header p {
+            font-size: 12vw;
+        }
+        .reservation-form {
+            height: 100vw;
+            margin-top: 30%;
+            text-align: center;
+        }
+        .reservation-form h2 {
+            font-size: 6vw;
+        }
+        .reservation-form label {
+            font-size: 4vw;
+        }
+        .reservation-form input {
+            font-size: 4vw;
+            padding: 1vw;
+            margin: 1vw;
+        }
+        .reservation-form .btn {
+            font-size: 4vw;
+            padding: 1vw 3vw;
+        }
+        .reservation-rules {
+            font-size: 3vw;
+            padding: 2vw;
+            margin-top: 15vw;
+            text-align: center;
+        }
+        .footer {
+            margin-top: 50%;
+            flex-direction: column;
+            align-items: center;
+        }
+        .footer p {
+            font-size: 3vw;
+            margin: 2vw;
+        }
+    }
+</style>
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="Reservations.html">Reservations</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+        </ul>
+    </div>
+    <div class="header">
+        <p>Reservation</p>
+    </div>
+    <div class="reservation-form">
+        <h2>Seat Reservation Form</h2>
+        <form id="reservationForm">
+            <label for="date">Select a date: <input type="date" id="date" name="date" required></label><br><br>
+
+            <label for="time">Select a time: <input type="time" id="time" name="time" step="1800" required></label><br><br>
+
+            <label for="people">Number of people: <input type="number" id="people" name="people" min="1" max="10" required placeholder="2"></label><br><br>
+
+            <input type="submit" value="Reserve" class="btn" id="btn">
+        </form>
+        <p class="reservation-rules">
+            Please note: Reservations must be made at least 24 hours in advance. Cancellations should be made at least 12 hours before the reserved time. For groups larger than 10, please contact us directly.
+        </p>
+    </div>
+    <div class="footer">
+        <p>&copy; 2023 Steak'n'yum. All rights reserved.</p>
+    </div>
+</body>
+</html>

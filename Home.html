@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steak'n'yum - Main Site</title>
+</head>
+<style>
+    * {
+        /* font-family: Arial, Helvetica, sans-serif; */
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+    }
+/* ------------------- MENU ------------------- */
+    .menu {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+        background-color: #222;
+        color: white;
+        text-align: center;
+        padding: 0.2vw;
+    }
+
+    .menu ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .menu ul li {
+        display: inline;
+        margin: 0 2vw;
+        font-size: 1.8vw;
+        
+    }
+    .menu a:hover {
+        color: rgb(113, 189, 125);
+        transition: 0.2s;
+        border-bottom: 1px solid gray;
+    }
+
+    .menu ul li a {
+        color: white;
+        text-decoration: none;
+        transition: .3s;
+        border-bottom: 1px solid transparent;
+        padding: 10px;
+        border-radius: 10px;
+    }
+/* ------------------- HEADER ------------------- */
+    .header {
+        position: relative;
+        background-image: url(https://www.certifiedangusbeef.com/_next/image?url=https%3A%2F%2Fappetizing-cactus-7139e93734.media.strapiapp.com%2FSeared_Sirloin_Steak_with_Mushroom_Cream_Sauce_3136174082.jpeg&w=3840&q=75);
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        padding-top: 2vw;
+        padding-bottom: 0.5vw;
+        opacity: 0.8;
+        margin-top: 4vw;
+    }
+    .header p {
+        text-shadow: 1vw 1vw 1vw #000000;
+        font-size: 10vw;
+        font-family: Brush Script MT, cursive;
+        user-select: none;
+    }
+/* ------------------- CONTENT ------------------- */
+    .content {
+        display: flex;
+        flex-direction: row;
+        background-color: black;
+        padding: 20px;
+    }
+    .content img {
+        width: 20%;
+        opacity: 0.8;
+        margin: 5vw;
+    }
+    .content p {
+        font-family: cursive;
+        margin-top: 5vw;
+        color: white;
+        text-align: justify;
+        font-size: 2.5vw;
+        letter-spacing: 0.1vw;    
+        user-select: none;
+    }
+    .paragraph {
+        display: flex;
+        flex-direction: column;
+    }
+    .paragraph p {
+        margin-top: 5vw;
+        margin-right: 10rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2.5rem;
+        margin-bottom: -1vw;
+    }
+    .bold
+    {
+        font-weight: bold;
+        color: rgb(113, 206, 136);
+    }
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #222;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+    }
+    .footer p {
+        margin-left: 7vw;
+        margin-right: 7vw;
+        padding: 0.2vw;
+        font-size: 1.2vw;
+    }
+    
+
+    @media (max-width: 768px) {
+        .menu ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-left: 10vw;
+            padding-right: 10vw;
+            
+        }
+        .menu ul li {
+            display: inline-block;
+            margin: 1vw 0;
+            font-size: 4vw;
+        }
+        .header {
+            padding-top: 5vw;
+            padding-bottom: 5vw;
+        }
+        .header p {
+            font-size: 12vw;
+        }
+        .content {
+            flex-direction: column;
+            padding: 10px;
+        }
+        .content img {
+            width: 90%;
+            margin: 2vw auto;
+        }
+        .content p {
+            font-size: 4vw;
+            margin: 2vw 0;
+            text-align: center;
+        }
+        .paragraph p {
+            font-size: 4vw;
+            margin-top: 2vw;
+            margin-bottom: 2vw;
+        }
+        .footer {
+            flex-direction: column;
+            align-items: center;
+        }
+        .footer p {
+            font-size: 3vw;
+            margin: 2vw;
+        }
+    }
+</style>
+
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="Reservations.html">Reservations</a></li>
+            <li><a href="AboutUs.html">About us</a></li>
+        </ul>
+    </div>
+    <div class="header">
+        <p>S t e a k ' n ' y u m</p>
+    </div>
+    <div class="content">
+        <img src="https://natashaskitchen.com/wp-content/uploads/2020/03/Pan-Seared-Steak-4.jpg" alt="img1">
+        <div class="paragraph">
+            <p>Traditionally prepared, <span class="bold">juicy, and mouth-watering steaks.</span> This is what our master chefs specialize in.</p>
+            <p>With us, it's not like everywhere else. <span class="bold">Top-shelf goods.</span> Imported from Japan, Argentina, and the United States.</p>
+            <p>Come if you want to set sail on an <span class="bold">ocean full of flavor.</span></p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Steak'n'yum - ul. Przykładowa 1, 00-000 Katowice</p>
+        <p><span class="bold">Tel:</span> +48 000 000 000, <span class="bold">E-mail:</span> example@steaknyum.com</p>
+    </div>
+
+</body>
+</html>
